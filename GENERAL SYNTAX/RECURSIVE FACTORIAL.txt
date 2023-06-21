@@ -1,0 +1,9 @@
+# PROGRAM TO RECURSIVELY CALCULATE FACTORIAL OF A NUMBER 
+
+def facto( n ) : 
+    if( n > 0 ) :   return n*facto( n-1 )
+    else :          return 1
+    
+n = -1
+while( n < 0 ) : n = int( input( "\nEnter a number : " ) )
+print( "\n{}! = {}".format( n, facto( n ) ) )

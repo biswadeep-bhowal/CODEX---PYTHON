@@ -1,0 +1,11 @@
+# PROGRAM TO MUTATE STRING WITHOUT ANOTHER DATA STRUCTURE
+
+string = input( "Enter a sentence : " ) 
+character = input( "\nENter a character : " ) 
+index = int( input( "\nEnter the index of insertion : " ) )
+
+try : 
+    string = string[ : index ] + character + string[ index+1 : ]
+    print( "Result :", string )
+    
+except : print( "\nSorry ! INVALID INDEX..." )

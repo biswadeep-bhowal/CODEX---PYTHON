@@ -1,0 +1,9 @@
+# PARALLELOGRAM - 2
+
+row, col = int( input( "\nRows : " ) ), int( input( "\nColumns : " ) )
+i, j = 0, row-1
+
+for i in range( 0, row ) :
+    print( "   " * j, end = "" )
+    print( " * " * col )
+    j -= 1

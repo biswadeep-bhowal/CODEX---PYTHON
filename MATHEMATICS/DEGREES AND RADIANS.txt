@@ -1,0 +1,11 @@
+from math import degrees, radians
+
+choice = int( input( "\tMENU\n1)Degrees to Radians\n2)Radians to Degrees\n\nEnter your choice : ") )
+while( choice not in ( 1, 2 ) ) : choice = int( input( "INVALID CHOICE...ENTER AGIN : " ) )
+
+if( choice == 1 ) : 
+    deg = float( input( "Enter degrees : " ) )
+    print( "{} degrees = {} radians".format( deg, radians( deg ) ) )
+else : 
+    rad = float( input( "Enter radians : " ) )
+    print( "{} radians = {} degrees".format( rad, degrees( rad ) ) )

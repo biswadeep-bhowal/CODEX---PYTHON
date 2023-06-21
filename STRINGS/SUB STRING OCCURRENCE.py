@@ -1,0 +1,19 @@
+# PROGRAM TO FIND ALL OCCURRENCES OF SUBSTRING IN A GIVEN STRING
+
+from re import finditer
+
+string = input( "Enter a string : " )
+sub = input( "Enter a sub string : " )
+
+sub.rstrip()
+while( len( sub ) > len( string ) ) : sub = input( "INVALID INPUT...ENTER AGAIN : " )
+
+
+
+indices = [ m.start() for m in finditer( sub, string ) ] 
+
+if( len( indices ) == 0 ) : print( "No substring found in string..." )
+else : 
+	print( "Subs String found at indices : ", end = '' )
+	for i in indices : print( i, end = ", ")
+

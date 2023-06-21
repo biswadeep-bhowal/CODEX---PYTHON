@@ -1,0 +1,17 @@
+# PROGRAM TO FETCH CURRENT DATE AND TIME 
+
+from datetime import datetime
+
+current_date_time = datetime.now()
+print( "Current Date and Time : ", current_date_time )
+
+print( "\nDate :\t", current_date_time.date() )
+print( "Day :\t", current_date_time.day )
+print( "Month :\t", current_date_time.month )
+print( "Year :\t", current_date_time.year )
+
+print( "\nTime :\t", current_date_time.time() )
+print( "Hour :\t", current_date_time.hour )
+print( "Minute :", current_date_time.minute )
+print( "Second :", current_date_time.second )
+print( "Micro-Second : ", current_date_time.microsecond )

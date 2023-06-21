@@ -1,0 +1,12 @@
+# PROGRAM TO FIND CARTESIAN PRODUCTS FROM GIVEN ITERABLES
+
+from itertools import product
+
+a = [ 1,2 ,3 ]
+b = [ 4, 5, 6 ]
+
+print( "a =", a )
+print( "b =", b ) 
+print( "a x a =", list( product( a, a ) ) )
+print( "b x b =", list( product( b, b ) ) )
+print( "a x b =", list( product( a, b )  ) )

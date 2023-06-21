@@ -1,0 +1,12 @@
+# ARRAY SYNTAX ILLUSTRATION
+
+from numpy import *
+
+arr = array( [], int )   # DECLARATION    
+
+n = int( input( "\nEnter size of array : " ) ) 
+
+print( "\nEnter array elements : " )
+for n in range( n ) : arr = append( arr, int( input() ) )     # ELEMENT INPUT
+
+print( "\nGiven Array :", arr )    # DISPLAY

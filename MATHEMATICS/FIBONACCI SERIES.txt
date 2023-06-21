@@ -1,0 +1,17 @@
+# PROGRAM TO PRINT TERMS OF THE FIBONACCI SERIES
+
+from math import pow, sqrt
+
+def fibonacci( n ) : 
+    x = sqrt( 5 )
+    return int( ( pow( 1 + x, n ) - pow( 1 - x, n ) )/(x*pow( 2, n ) ) )
+        
+
+# DRIVER CODE : 
+
+n = 0
+while( n <= 0 ) : n = int( input( "\nEnter number of terms : " ) )
+
+print( "\nRequested Series : ", end = '' )
+for i in range( n ) :
+    print( fibonacci( i ), end = ", " )

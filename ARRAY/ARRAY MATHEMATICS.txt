@@ -1,0 +1,18 @@
+# PROGRAM TO PERFORM BASIC MATHEMATICAL ARRAY OPERATIONS 
+
+from numpy import array
+
+a = array( [ 1, 2, 3 ] ) 
+b = array( [ 4, 5, 6 ] )
+
+print( "a = ", a )
+print( "b = ", b )
+
+print()
+
+print( "a + b   =\t", a + b )
+print( "a - b   =\t", a - b )
+print( "a * b   =\t", a * b )
+print( "a / b   =\t", a // b ) 
+print( "a % b   =\t", a % b )
+print( "a ** b  =\t", a ** b )

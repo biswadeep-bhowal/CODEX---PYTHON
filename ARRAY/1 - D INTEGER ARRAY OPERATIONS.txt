@@ -1,0 +1,51 @@
+# 1 - D INTEGER ARRAY OPERATIONS
+
+from numpy import *
+
+# MENU FUNCTIONS : 
+
+def clrscr() : print( '\n' * 21 )
+
+def INITIALISE( a ) : 
+    a = array( [], int )
+    
+    n = int( input( "\nEnter size of the array : " ) )
+    print( "\nEnter the array elements :" )
+    for n in range( n ) : 
+        a = append( a, int( input() ) )
+        
+    return a
+    
+def INSERT( a ) : 
+    element = int( input( "\nEnter element to be inserted : " ) )
+    position = int( input( "\nEnter position at which to insert :  " ) )
+    
+    try :       a = insert( a, position-1, element )
+    except :    print( "\nSorry ! INVALID POSITION..." )
+    finally :   return a
+    
+def DELETE( a ) : 
+    element = int( input( "\nEnter element to be deleted : " ) )
+    
+    try :       a = delete( a, list( a ).index( element ) )
+    except :    print( "Sorry ! ELEMENT DOES NOT EXIST..." )
+    finally :   return a
+
+# DRIVER CODE :
+
+a = array( [], int )
+
+while( True ) : 
+    clrscr()
+    choice = int( input( "\t\tMENU\n1)INITIALISE\n2)INSERT\n3)DELETE\n4)DISPLAY\n5)EXIT\n\nEnter your choice : " ) )
+    clrscr()
+    
+    if( choice == 1 ) :     a = INITIALISE( a )
+    elif( choice == 2 ) :   a = INSERT( a )
+    elif( choice == 3 ) :   a = DELETE( a )
+    elif( choice == 4 ) :   print( "\narr = ", a )
+    elif( choice == 5 ) :   break
+    
+    else : print( "\nINVALID CHOICE..." )
+    
+    ch = input( "\nPress ENTER to continue..." )

@@ -1,0 +1,8 @@
+# PROGRAM TO DELETE DUPLICATE ELEMENTS IN A LIST
+
+li = list( map( int, input( "Enter space separated list of integers : " ).split() ) )
+print( "\nGiven List : ", li )
+
+result = []
+[ result.append( x ) for x in li if x not in result ]
+print( "Result : ", result )

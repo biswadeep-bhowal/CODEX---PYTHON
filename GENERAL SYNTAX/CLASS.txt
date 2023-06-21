@@ -1,0 +1,15 @@
+class person : 
+    
+    def __init__( self, name, age ) : # INITIALISATION, LIKE A CONSTRUCTOR
+        self.name = name
+        self.age = age 
+        
+    def compare( self, other ) : 
+        if( self.age == other.age ) :   print( "\nSame Age" )
+        else :                          print( "\nDifferent Age" )
+        
+    
+p1 = person( "Raj", 30 )	# CREATING OBJECT
+p2 = person( "Ravi", 30 ) 
+
+p1.compare( p2 )		# CALLING OBJECT'S METHOD

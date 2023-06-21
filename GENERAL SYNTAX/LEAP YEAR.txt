@@ -1,0 +1,7 @@
+# PROGRAM TO CHECK LEAP YEAR
+
+year = int( input( "\nEnter a year : " ) )
+
+if year % 400 == 0 :                        print( "\nLeap Year !" )
+elif year % 4 == 0 and year % 100 != 0 :    print( "\nLeap Year !" )
+else :                                      print( "\nNot a Leap Year..." )

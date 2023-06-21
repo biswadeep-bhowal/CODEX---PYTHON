@@ -1,0 +1,10 @@
+# SET SYNTAX
+
+s = set()  # DECLARATION
+n = int( input( "\nNumber of elements : " ) )
+
+print( "\nEnter the set elements :" )
+for i in range( n ) : 
+    s.add( int( input() ) )
+    
+print( "\nGiven Set :", s )

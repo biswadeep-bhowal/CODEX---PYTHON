@@ -1,0 +1,10 @@
+# PROGRAM TO RETURN CORRESPONDING WEEKDAY OF GIVEN DATE
+
+from datetime import date
+
+d, m, y = map( int, input( "Enter a date ( dd mm yyyy ) : " ).split() )
+
+d = date( y, m, d )
+day = d.strftime( "%A" )
+
+print( "{} is a {}".format( d, day ) )

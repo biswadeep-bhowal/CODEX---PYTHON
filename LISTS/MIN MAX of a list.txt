@@ -1,0 +1,7 @@
+# PROGRAM TO FIND MAXIMUM AND MINIMUM ELEMENT OF A list
+
+n = int( input( "Enter number of elements : " ) )
+list = []
+i = 0
+for i in range( 0, n ) : list.append( int( input() ) )
+print( "\nMinimum Element : ", min( list ), "\nMaximum Element : ", max( list ) )

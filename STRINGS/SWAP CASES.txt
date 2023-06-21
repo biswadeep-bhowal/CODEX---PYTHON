@@ -1,0 +1,12 @@
+# PROGRAM TO SWAP CASES OF A GIVEN STRING 
+
+s = input( "\nEnter a sentence : " )
+n = len( s )
+temp = ""
+
+for i in range( n ) : 
+    if( s[ i ].isupper() == True ) : 
+        temp += s[ i ].lower()
+    else : temp += s[ i ].upper()
+    
+print( "\nResult : ", temp )

@@ -1,0 +1,4 @@
+# PROGRAM TO ILLUSTRATE SPLIT() AND JOIN () SYNTAX
+
+s = '-'.join( input( "Enter a sentence : " ).split() )
+print( "Result :",s )

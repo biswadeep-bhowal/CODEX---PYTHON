@@ -1,0 +1,17 @@
+# + - 2
+
+from math import floor, ceil
+
+row = 0
+while row < 3 : 
+    row = int( input( "\nRows : " ) )
+
+i, j = 0, 0
+for i in range( 0, row ) :
+    for j in range( 0, row ) : 
+        if( j == floor( ( row-1 )/2 ) or j == ceil( ( row-1 )/2 ) or i == floor( ( row-1 )/2 ) or i == ceil( ( row-1 )/2 ) ) : 
+            print( "  ", end = "" )            
+        else : 
+            print( " * ", end = "" )
+    print()
+    

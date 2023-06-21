@@ -1,0 +1,9 @@
+# PROGRAM TO GET FREQUENCY OF ALL ELEMENTS IN A LIST IN THE FORM OF A DICTIONARY
+
+from collections import Counter
+
+a = [ 1, 3, 5, 1, 7, 5, 3, 9, 7, 2, 6, 5, 1, 4, 8, 10, 0, 7, 4, 8, 7 ]
+print( "a =", a)
+
+x = Counter( a )
+print( "Frequencies : ", x )

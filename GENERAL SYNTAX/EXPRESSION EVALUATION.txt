@@ -1,0 +1,8 @@
+# Expression Evaluation
+
+ch = 'y'
+while( ch == 'y' or ch == 'Y' ) : 
+    result = eval( input( "\nEnter expression : " ) )
+    print( "\nResult =", result  )
+    
+    ch = str( input( "\nContinue ? ( Y / N ) : " ) )

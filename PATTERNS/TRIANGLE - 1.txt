@@ -1,0 +1,5 @@
+# TRIANGLE - 1
+
+row = int( input( "\nRows : " ) )
+for row in range( 0, row ) : 
+    print( " * " * ( row+1 ) )

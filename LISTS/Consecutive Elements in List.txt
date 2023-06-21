@@ -1,0 +1,16 @@
+# GIVEN A LIST OF ELEMENTS, FIND THE BIGGEST SUB LIST OF CONSECUTIVE ELEMENTS 
+
+from itertools import groupby
+
+data = groupby( list( map( int, input( "Enter space separated list of elements : " ).split() ) ) )
+group, m = [], []
+MAX = 0
+
+
+for k, g in data :
+    group = list( g )
+    if( len( group ) > MAX ) : 
+        m = group
+        MAX = len( m )
+        
+print( "Largest Group of consecutive elements : {}\nLength : {}".format( m, MAX ) )

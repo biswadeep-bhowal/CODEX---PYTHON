@@ -1,0 +1,9 @@
+# PROGRAM FOR DIFFERENT DATA TYPE DECLARATIONS
+
+INTEGER = int()
+FLOAT = float()
+STRING = str()
+LIST = list()
+DICTIONARY = dict()
+SET = set()
+TUPLE = tuple()

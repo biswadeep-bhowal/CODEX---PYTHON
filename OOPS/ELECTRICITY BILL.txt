@@ -1,0 +1,25 @@
+# PROGRAM TO CALCULATE ELECTRICITY BILL USING OOP
+
+class customer : 
+    
+    rate = 12
+    
+    def __init__( self ) : 
+        self.name = input( "Name : " )
+        self.unit = int( input( "Units : " ) )
+
+    def cal( self ) : return self.unit*self.rate
+        
+    def display( self ) : 
+        print( "Name : {}\tUnits : {}\tRate = {}\tAmount = {}".format( self.name, self.unit, self.rate, self.cal() ) )
+        
+        
+# DRIVER CODE
+
+n = int( input( "Number of customers : " ) )
+cust = []
+
+for i in range( n ) : cust.append( customer() )
+
+print( "\n\t\tBILLS :\n" )
+for i in cust : i.display()

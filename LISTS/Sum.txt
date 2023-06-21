@@ -1,0 +1,5 @@
+# PROGRAM TO FIND SUM OF ALL ELEMENTS OF A LIST
+
+LIST = [ 1, 2, 3, 4, 5 ]
+print( "\nInitialised List : ", LIST )
+print( "\nSum of all elements : ", sum( LIST )  )

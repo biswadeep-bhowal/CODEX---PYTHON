@@ -1,0 +1,6 @@
+# PROGRAM TO CONVERT A GIVEN LIST OF STRINGS TO A SINGLE STRING. 
+
+s = [ 'H', 'E', 'L', 'L', 'O', ' ', 'W', 'O', 'R', 'L', 'D' ]
+print( "\nList :", s )
+s = ''.join( s )
+print( "String :", s )

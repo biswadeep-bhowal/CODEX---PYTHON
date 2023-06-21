@@ -1,0 +1,15 @@
+# PROGRAM TO ILLUSTRATE OrderedDict 
+
+from collections import OrderedDict
+
+dic = OrderedDict()
+n = int( input( "Enter no. of items : " ) )
+
+print( "Enter the items as : <name quantity> \n" )
+
+for _ in range( n ) : 
+    item, space, qty = input().rpartition( ' ' )
+    dic[ item ] = int( qty ) if item not in dic.keys() else dic[ item ] + int( qty )
+
+print( "\nGiven Items :" )
+for key, value in dic.items() : print( key, value )

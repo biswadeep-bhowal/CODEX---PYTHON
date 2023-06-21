@@ -1,0 +1,6 @@
+# PROGRAM TO REVERSE A LIST
+
+LIST = [ 1, 2, 3, 4, 5 ]
+print( "\nInitialised List : ", LIST )
+LIST.reverse()
+print( "\nReversed List : ", LIST )

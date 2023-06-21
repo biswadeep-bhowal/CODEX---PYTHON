@@ -1,0 +1,102 @@
+# PROGRAM TO ILLUSTRATE ALL IN - BUILT LIST FUNCTIONS IN PYTHON
+
+def clrscr( n ) : print( '\n' * n )
+
+def menu() : 
+    clrscr( 21 )
+    
+    print( """\tMENU
+1) INITIALISE LIST
+2) INSERT ELEMENT
+3) APPEND ELEMENT
+4) CONCATENATE LISTS
+5) EXTEND LIST
+6) COPY LIST
+7) CLEAR LIST
+8) DELETE ELEMENT
+9) DELETE FIRST OCCURRENCE OF ELEMENT
+10) DELETE LAST ELEMENT
+11) SEARCH FOR ELEMENT
+12) LIST LENGTH
+13) SORT LIST
+14) REVERSE LIST""" )
+    return int( input( "\n\tEnter your choice : " ) )
+    
+
+L1, L2, L3 = [], [], []
+choice, ch = 0, 'y'
+
+while( ch == 'y' or ch == 'Y' ) : 
+    
+    choice = menu()
+    
+    if( choice == 1 ) :      
+        size = int( input( "\nEnter number of elements : " ) )
+        print( "Enter list elements : " )
+        for i in range( size ) : L1.append( int( input() ) )
+        print( "Given List :", L1 )
+    
+    elif( choice == 2 ) :
+        try :       L1.insert( int( input( "\nEnter index : " ) ), int( input( "\nEnter element to be inserted : " ) )  )        
+        except :    print( "\nSorry ! INVALID INDEX.." )
+        finally :   print( "\nList Status : ", L1 ) 
+    
+    elif( choice == 3 ) :
+        L1.append( int( input( "Enter element to be appended : " ) ) )
+        print( "\nList Status : ", L1 )
+    
+    elif( choice == 4 ) :
+        size = int( input( "\nEnter number of elements for second list: " ) )
+        print( "Enter list elements : " )
+        for i in range( size ) : L2.append( int( input() ) )
+        L1 = L1 + L2
+        print( "\nList Status : ", L1 )
+        
+    elif( choice == 5 ) :
+        size = int( input( "\nEnter number of elements for second list: " ) )
+        print( "Enter list elements : " )
+        for i in range( size ) : L2.append( int( input() ) )
+        L1.extend( L2 )
+        print( "\nList Status : ", L1 )
+        
+    elif( choice == 6 ) :
+        L2 = L1.copy()
+        print( "\nCopied List : ", L2 )
+        
+    elif( choice == 7 ) :
+        L1.clear()
+        print( "\nList Status : ", L1 )
+        
+    elif( choice == 8 ) :
+        try :       L1.pop( L1.index( int( input( "Enter eleemnt to be deleted : " ) ) ) )
+        except :    print( "Sorry ! Element does not exist..." )
+        finally :   print( "\nList Status : ", L1 )
+        
+    elif( choice == 9 ) :
+        try :       L1.remove( int( input( "Enter Element to be removed : " ) ) )
+        except :    print( "\nSorry ! Element does not ezist..." )
+        finally :   print( "\nList Status : ", L1 )
+        
+    elif( choice == 10 ) :
+        try :       L1.pop()
+        except :    print( "\nSorry ! Empty list..." )
+        finally :   print( "\nList Status : ", L1 )
+    
+    elif( choice == 11 ) :
+        try :       print( "\nElement Found at Index :", L1.index( int( input( "\nEnter element to be searched : " ) ) ) )
+        except :    print( "\nSorry ! Element does not exist..." )
+        
+    
+    elif( choice == 12 ) : print( "\nList Length :", len( L1 ) )
+    
+    elif( choice == 13 ) :
+        L1.sort()
+        print( "\nList Status : ", L1 )
+        
+    elif( choice == 14 ) :
+        L1.reverse()
+        print( "\nList Status : ", L1 )
+        
+    else : print( "INVALID CHOICE...." )
+
+    ch = input( "\nContinue ? ( Y / N ) : " )        

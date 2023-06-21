@@ -1,0 +1,4 @@
+# PROGRAM TO SPACE SEPARATED LINE OF INTEGERSIN A LIST 
+
+LIST = list( map( int, input( "\nEnter the list : " ).split() ) )
+print( "\nGiven List :", LIST )

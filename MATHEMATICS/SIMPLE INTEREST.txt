@@ -1,0 +1,9 @@
+# PROGRAM TO CALCULATE SIMPLE INTEREST
+
+p = float( input( "\nEnter principle amount : " ) )
+r = float( input( "\nEnter rate of interest p.a : " ) )
+t = float( input( "\nEnter time period in years : " ) )
+
+si = p*r*t/100
+
+print( "\nSimple Interest : ", si, "\nAmount = ", p + si ) 

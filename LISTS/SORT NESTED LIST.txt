@@ -1,0 +1,14 @@
+# PROGRAM TO SORT NESTED LIST ACCORDING TO NTH INDEX OF EVERY SUB-LIST
+
+record = []
+size = int( input( "\nEnter number of records : " ) )
+for i in range( size ) : 
+    name = input( "\nName : " ) 
+    score = float( input( "\nMarks : " ) )
+    record.append( [ name, score ] )
+    
+index = int( input( "\nSort By :\n0) Name\n1)Score\n\tEnter your choice : " ) )
+
+try :       record.sort( key = lambda x : x[ index ] )
+except :    print( "\nSorry ! INVALID CHOICE..." )
+finally :   print( "Sorted Records :", record ) 

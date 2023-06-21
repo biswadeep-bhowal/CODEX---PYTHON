@@ -1,0 +1,5 @@
+# RECTANGLE STAR PATTERN
+
+row, col = int( input( "\nRows : " ) ), int( input( "\nColumns : " ) )
+
+for row in range( 0, row ) : print( " * " * col )

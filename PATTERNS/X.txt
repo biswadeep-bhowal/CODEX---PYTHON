@@ -1,0 +1,12 @@
+# x
+
+row = int( input( "\nRows : " ) )
+i, j = 0, 0
+
+for i in range( 0, row ) : 
+    for j in range( 0, row ) : 
+        if( j == i or j == row-i-1 ) :
+            print( " * ", end = "" )
+        else : 
+            print( "   ", end = "" )
+    print()

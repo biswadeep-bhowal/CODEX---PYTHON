@@ -1,0 +1,4 @@
+# PROGRAM TO TAKE SINGLE LINE INPUT FOR A LIST
+
+LIST = list( input( "Enter the list elements in a single line : " ).split() )
+print( "\nGiven List :", LIST )

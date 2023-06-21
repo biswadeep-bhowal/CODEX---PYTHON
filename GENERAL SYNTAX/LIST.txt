@@ -1,0 +1,18 @@
+# PROGRAM TO FAMILIARISE SYNTAX OF LISTS 
+
+#Declaration
+list = []
+
+#Initialisation
+list = [ 1, 2, 3 ]
+print( "\nInitialised List : ", list )
+
+#User input
+list = []
+n = int( input( "\nEnter number of elements : " ) )
+i = 0
+print( "\nEnter List elements :\n" )
+for i in range( 0, n ) : 
+    list.append( int( input() ) )
+print( "Given List : ", list )
+print( "\nGiven List = ", list )

@@ -1,0 +1,11 @@
+# PROGRAM TO CALCULATE COMPOUND INTEREST 
+
+principle = float( input( "\nEnter the principle amount : " ) )
+rate = float( input( "\nEnter the rate ( % ) : " ) )
+time = float( input( "\nEnter the time ( years ) : " ) )
+n =   int( input( "\nNumber of times the priciple is compounded per year : " ) )
+
+rate /= 100
+amount = principle*( ( 1 + rate/n )**( n*time ) )
+
+print( "\nThe amount is : ", format( amount, ".3f" ) )

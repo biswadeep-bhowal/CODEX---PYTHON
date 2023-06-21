@@ -1,0 +1,7 @@
+# PROGRAM TO ILLUSTRATE INPUT FOR DIFFERENT DATA TYPES
+
+a = int( input( "Enter integer : " ) )
+b = float( input( "Enter float : " ) )
+c = input( "Enter a string : " )
+d = complex( input( "Enter a complex number : " ) )
+e = list( map( int, input( "Enter space separated list of integers : " ).split() ) )

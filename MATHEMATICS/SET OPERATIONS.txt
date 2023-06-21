@@ -1,0 +1,36 @@
+# PROGRAM TO ILLUSTRATE MATHEMATICAL SET OPERATIONS
+
+def clrscr( n ) : print( '\n'*n )
+
+def menu( ) : 
+    print( """
+        MENU
+1) UNION
+2) INTERSECTION
+3) DIFFERENCE
+4) SYMMETRIC DIFFERENCE
+
+""" )
+    return int( input( "Enter your choice : " ) )
+    
+# DRIVER CODE
+
+a, b = set(), set()
+choice = int()
+ch = 'y'
+
+while( ch in "yY" ) : 
+    
+    clrscr( 21 )
+    choice = menu()
+    
+    a, b = set( map( int, input( "a = " ).split() ) ), set( map( int, input( "b = " ).split() ) )
+    
+    if( choice == 1 ) :     print( "a | b = ", a | b )
+    elif( choice == 2 ) :   print( "a & b = ", a & b )
+    elif( choice == 3 ) :   print( "a - b = ", a - b )
+    elif( choice == 4 ) :   print( "a ^ b = ", a ^ b ) 
+    
+    else : print( "INVALID CHOICE... " )
+    
+    ch = input( "\n\nCONTINUE ? ( Y / N ) : " )

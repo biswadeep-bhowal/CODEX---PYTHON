@@ -1,0 +1,6 @@
+# TUPLE SYNTAX
+
+t = ()  # DECLARATION
+
+t = tuple( map( int, input( "Enter space separated elements : " ).split() ) ) 
+print( "\nGiven Tuple : ", t )

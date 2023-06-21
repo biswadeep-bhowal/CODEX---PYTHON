@@ -1,0 +1,8 @@
+# PROGRAM TO DETERMINE VARIABLE TYPE IN PYTHON
+
+li = [ 1, 2, 4.34, "Hello" ]
+
+for i in li :
+    if( type( i ) is int ) : print( i, ": Integer" )
+    elif( type( i ) is float) : print( i, ": Floating Point" )
+    elif( type( i ) is str) : print( i, ": String" )

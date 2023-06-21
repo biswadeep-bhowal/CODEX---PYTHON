@@ -1,0 +1,11 @@
+# PROGRAM TO GENERATE AN N - DIMENSIONAL ARRAY OF ZEROES AND ONES
+
+from numpy import zeros, ones
+
+d = list( map( int, input( "Enter space separated list of dimnesions : " ).split() ) )
+
+arr = zeros( d, dtype = int )
+print( arr ) 
+
+arr = ones( d, dtype = int )
+print( arr )

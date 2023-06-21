@@ -1,0 +1,17 @@
+# PROGRAM TO ILLUSTRATE TEXT ALIGNMENT FUNCTIONS.
+
+text = input( "Enter a string : " ) 
+fillchar = "hELLO WORLD"
+width = -1
+
+while( len( fillchar ) > 1  ) : fillchar = input( "Enter a filler character ( SINGLE CHARACTER ONLY ) : " ) 
+while( width < len( text ) ) :  width = int( input( "Enter width ( GREATER THAN STRING LENGTH : )" ) )
+
+print( "\n\nLEFT ALIGNMENT :\n" )
+print( text.ljust( width, fillchar ) )
+
+print( "\nRIGHT ALIGNMENT : \n" )
+print( text.rjust( width, fillchar ) )
+
+print( "\nCENTER ALIGNMENT :\n" )
+print( text.center( width, fillchar ) )

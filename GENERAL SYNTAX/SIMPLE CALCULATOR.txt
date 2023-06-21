@@ -1,0 +1,25 @@
+# SIMPLE CALCULATOR 
+
+def clrscr( n ) : print( "\n"*n )
+
+def add( a, b ) : print( a+b )
+def sub( a, b ) : print( a-b )
+def mul( a, b ) : print( a*b )
+def div( a, b ) : print( a/b )
+
+# DRIVER CODE 
+a, b = float( input( "\na = " ) ), float( input( "\nb = " ) )
+
+ch = "Y"
+while( ch == 'Y' or ch == 'y') :
+    clrscr( 20 )
+    choice = int( input( "\t\tMENU\n1)Addition\n2)Subtraction\n3)Multiplication\n4)Division\n\nEnter your choice : " ) )
+    
+    if( choice == 1 ) :     add( a, b )
+    elif( choice == 2 ) :   sub( a, b )
+    elif( choice == 3 ) :   mul( a, b )
+    elif( choice == 4 ) :   div( a, b )
+    
+    else : print( "\nINVALID CHOICE...." )
+    
+    ch = str( input( "\nContinue ? ( Y / N ) : " ) )

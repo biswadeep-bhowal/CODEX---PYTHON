@@ -1,0 +1,7 @@
+# PROGRAM TO PRINT FACTORIAL OF A NUMBER
+
+from math import factorial
+
+n = 0
+while( n <= 0 ) : n = int( input( "\nEnter a number : " ) )
+print( "\n{}! = {}".format( n, factorial( n ) ) )

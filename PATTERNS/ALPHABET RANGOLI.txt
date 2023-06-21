@@ -1,0 +1,34 @@
+# PROGRAM TO PRINT ALPHABET RANGOLI, AS ASKED IN HACKERRANK
+
+from string import ascii_lowercase
+
+n = int( input( "Rows : " ) )
+while( n < 1 or n > 26 ) : n = int( input( "INVALID INPUT...ENTER AGAIN :" ) )
+L, l = [], []
+c = 2*n-1
+index = c-1
+
+for i in range( n ) : 
+    l = []
+    alpha = n-1
+    for j in range( c ) : 
+        
+        if( j%2 == 0 and j >= index and j < c ) : 
+            l.append( ascii_lowercase[ alpha ] ) 
+            alpha -= 1
+        else : l.append( '-' )
+    index -= 2
+    L.append( l )
+
+r = 2*n-1
+c = 2*r-1
+
+for i in range( r // 2  + 1) : 
+    for j in range( c // 2 + 1 ) : print( L[ i ][ j ], end = '' )
+    for j in range( c // 2 - 1, -1, -1 ) : print( L[ i ][ j ], end = '' )
+    print()
+        
+for i in range( r // 2 - 1, -1, -1 ) : 
+    for j in range( c // 2 + 1 ) : print( L[ i ][ j ], end = '' )
+    for j in range( c // 2 - 1, -1, -1 ) : print( L[ i ][ j ], end = '' )
+    print()

@@ -1,0 +1,6 @@
+# PROGRAM TO CONVERT 2D LIST TO 1D LIST
+
+matrix = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]
+print( "\nMatrix : ", matrix )
+array = [ element for sublist in matrix for element in sublist ]
+print( "Array : ", array )

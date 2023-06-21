@@ -1,0 +1,5 @@
+from datetime import date
+
+y, m, d = map( int, input( "Enter a date ( yyyy mm dd ) : " ).split() )
+DATE = date( y, m, d )
+print( "\nGiven date ( yyyy mm dd ) : ", DATE )

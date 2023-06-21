@@ -1,0 +1,7 @@
+# PROGRAM TO CALCULATE SYMMETRIC DIFFERENCE OF TWO GIVEN SETS
+
+a = set( map( int, input( "Enter first space separated list of integers : " ).split() ) )
+b = set( map( int, input( "Enter second space separated list of integers : " ).split() ) )
+
+c = a.symmetric_difference( b )
+print( "\nSymmetric Difference : ", c )

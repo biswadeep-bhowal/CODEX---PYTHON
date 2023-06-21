@@ -1,0 +1,9 @@
+# PROGRAM TO SWAP TWO VARIABLES
+
+a, b = 5, 6
+
+print( "\nInitialised : a = ", a, " b = ", b )
+
+a, b = b, a
+
+print( "\nSwapped : a = ", a, " b = ", b )

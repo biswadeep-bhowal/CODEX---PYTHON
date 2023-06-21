@@ -1,0 +1,5 @@
+# PROGRAM TO PRINT TOP 3 MOST COMMON CHARACTERS IN A GIVEN STRING
+
+from collections import Counter
+
+print( Counter( sorted( input() ) ).most_common( 3 ) )
